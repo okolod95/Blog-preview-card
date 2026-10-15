@@ -1,0 +1,95 @@
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --gray500: hsl(0, 0%, 42%);
+  --gray950: hsl(0, 0%, 7%);
+}
+
+/* @font-face {
+  font-family: "MyFont";
+  src: url("../fonts/Figtree-Italic-VariableFont_wght.ttf") format("ttf");
+  font-weight: 500, 800;
+  font-style: normal;
+} */
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background: var(--yellow);
+  padding: 0px;
+  margin: 0px;
+ 
+}
+
+main {
+  background: var(--white);
+  font-family: 'Figtree', sans-serif;
+  padding: 20px;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  box-shadow: 7px 5px 2px black;  
+}
+
+main img {
+  border-radius: 10px;
+}
+
+#container {
+  background: var(--yellow);
+  width: 60px;
+  display: inline-block;
+  padding: 0px 15px;
+  border-radius: 8%;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.text span p{
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.text h4 {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.student-img { 
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#student-name {
+  font-weight: 800;
+}
+
+.end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  /* width: 100%; */
+  box-sizing: border-box;
+  color: var(--gray950);
+  font-family: 'Figtree', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* DESKTOP */
+
+@media (min-width: 650px) {
+  main{
+    transform: scale(0.7);
+  } 
+  .end {
+    font-weight: 500;
+  }
+}
